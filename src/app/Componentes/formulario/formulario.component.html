@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<br><br>
+
+<div class="container">
+    <div class="row">
+        <form class="col-md-5">
+            
+            <label for="Nombre" class="form-label">Nombre: </label>
+            <input type="text" class="form-control"  required>
+            
+            <label for="Apellido" class="form-label">Apellido: </label>
+            <input type="text" class="form-control" required>
+            
+            <label for=Email class="form-label">Email: </label>
+            <input type="text" class="form-control"  required>
+            
+            <label for="Edad" class="form-label">Password: </label>
+            <input type="password" class="form-control"required>
+
+            <label for="Genero" class="for-label">Genero: </label>
+            <select class="form-control form-control">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+            </select>
+            
+            <br>
+            <div>
+                <button (click)="eventoOpen()" type="submit" class="btn btn-dark btn-block" href="https://www.youtube.com/?gl=MX&hl=es-419">Registrarme</button>
+            </div>
+            <div [@openClose]="isOpen ? 'open' : 'closed'">
+                
+            </div>
+            <br>
+            
+        </form>
+        <div class="col-md-4">
+            <img src="../../../assets/img/world.jpg" alt="" class="rounded mx-auto d-block" >
+        </div>
+    </div>
+</div>
